@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class='form-poll'
+        action=""
+        autocomplete
+        method='get'
+        name='form-poll'>
+        <h2>Заповніть форму</h2>
+
+        <p>
+            <b>Введіть імя:</b>
+            <input type="text"
+                name='username'
+                required>
+
+            <b>Введіть email:</b>
+            <input type="email"
+                name='email'
+                required>
+        </p>
+
+        <p>
+            <b>Введіть пароль:</b>
+            <input type="password"
+                name='password'
+                required>
+
+            <b>Введіть ваш вік:</b>
+            <input type="number"
+                name='number'
+                required>
+        </p>
+
+        <p>
+            <b>Виберіть улюблений колір:</b>
+            <input type="color"
+                name='color'>
+
+            <b>Прикріпіть ваше резюме:</b>
+            <input type="file"
+                name='file'>
+        </p>
+
+        <p>
+            <b>Вкажіть дату початку роботи:</b>
+            <input type="date"
+                name='date'>
+        </p>
+
+
+        <p class='fild'>
+            <b>Виберіть напрямок:</b><br>
+
+            <label for="frontend">Frontend
+                
+            </label>
+            <input type="checkbox"
+                name='check'
+                id='frontend'>
+
+            <label for="backend">Backend</label>
+            <input type="checkbox"
+                name='check'
+                id='backend'>
+
+            <label for="fullstack">Fullstack</label>
+            <input type="checkbox"
+                name='check'
+                id='fullstack'>
+        </p>
+
+
+        <p class='fild'>
+            <b>Виберіть тип зайнятості:</b><br>
+
+            <label for="office">Офіс</label>
+            <input type="radio"
+                name='rad'
+                id='office'>
+
+            <label for="remotely">Віддалено</label>
+            <input type="radio"
+                name='rad'
+                id='remotely'>
+
+            <label for="almost">Часткова зайнятість</label>
+            <input type="radio"
+                name='rad'
+                id='almost'>
+        </p>
+
+        <p class='fild'>
+            <b>Чому ми повинні вибрати  саме вас?</b><br>
+            <textarea name="comments"
+                id=""
+                cols="30"
+                rows="3"></textarea>
+        </p>
+
+        <p class='captcha fild'>
+            <b>Введіть число з картинки:</b><br>
+            <img src="./card/captcha.jfif"
+                alt="">
+            <input class='captcha__check'
+                type="text"
+                name='captcha'
+                required
+                pattern="801134587">
+            <span class="captcha__span"></span>
+            <span class="captcha__false">Неправильне число</span>
+        </p>
+
+        <p>
+            <input class="btn btn-primary"
+                type="reset"
+                name='reset'
+                value='Очистити'>
+            <input class="btn btn-success"
+                type="submit"
+                name='submit'>
+        </p>
+    </form>
+
+    <form class='form-poll'
+        oninput="result.value=(cm.value / 2.54).toFixed(4)">
+
+        <b>Перевірте себе!</b><br>
+        <b>Скільки сантиметрів в дюймі?</b>
+        <p>Введіть довжину в сантиметрах:
+            <input type="color"
+                name="cm">
+        </p>
+        <p>
+            Довжина в дюймах: <output name="result">0</output>
+        </p>
+    </form>
+    <!-- <form class='form-poll'
+        action=""
+        autocomplete
+        method="get"
+        name='form-poll'>
+
+        <p>
+            <b>Логін:</b>
+            <input type="text"
+                name='username' placeholder="login" 
+                required>
+        </p>
+
+        <p>
+            <b>Пароль:</b>
+            <input type="password"
+                name='password'
+                required>
+        </p>
+    </form> -->
+    
+</body>
+</html>

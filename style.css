@@ -1,0 +1,49 @@
+.form-poll {
+    width: 850px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 8px 8px 7px -1px gray;
+    color: white;
+    background: radial-gradient(55% 35%, aqua, rgb(36, 26, 124));
+}
+
+.form-poll h2 {
+    color: rgb(64, 232, 94);
+    text-shadow: 3px 3px 0 rgb(22, 26, 22);
+}
+
+.fild {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.captcha img {
+    width: 50px;
+}
+
+.captcha__span {
+    position: relative;
+}
+
+.captcha__span::after {
+    position: absolute;
+    left: 10px;
+}
+
+.captcha__check:valid+.captcha__span::after {
+    content: url('./card/ok.png');
+}
+
+.captcha__check:invalid+.captcha__span::after {
+    content: url('./card/nook.png');
+}
+
+.captcha__false {
+    color: red;
+    margin-left: 30px;
+}
+
+.captcha__check:valid~.captcha__false {
+    display: none;
+}
